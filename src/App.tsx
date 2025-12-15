@@ -1,4 +1,4 @@
-import MainPage from './index.jsx';
+import MainPage from './index';
 import Popup from './components/Popup';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
