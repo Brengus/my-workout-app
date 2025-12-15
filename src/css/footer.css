@@ -1,0 +1,41 @@
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    gap: 3em;
+    margin: 0 auto;
+    color: var(--color-two);
+}
+
+.title-footer {
+    line-height: 3em;
+    font-weight: 500;
+    color: var(--color-one);
+    font-size: 1.25em;
+}
+
+.card-footer {
+    text-align: left;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+.footer-icon {
+    width: 30px;
+    border-radius: 100px;
+    transition: transform 0.2s ease-in-out
+}
+
+.footer-icon:hover {
+    transform: translateY(-20%);
+    cursor: pointer;
+}
+
+.footer-icons-list {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}

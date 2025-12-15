@@ -1,0 +1,23 @@
+.main-card {
+    text-align: center;
+}
+
+.image {
+    line-height: 1.8em;
+}
+
+.data {
+    color: var(--color-one);
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 1.8em;
+}
+
+.text {
+    color: var(--color-two);
+    font-size: var(--font-three);
+    width: 250px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}

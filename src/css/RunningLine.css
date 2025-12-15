@@ -1,0 +1,42 @@
+.main-container {
+    max-width: 200%;
+    overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.slide-animation {
+    animation: slidekaco 5s linear infinite;
+}
+
+@keyframes slidekaco {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+}
+
+.white-background {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+}

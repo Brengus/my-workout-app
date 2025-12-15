@@ -1,0 +1,86 @@
+.main {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background: none;
+}
+
+.ghost {
+    position: absolute;
+    top: 0;
+}
+
+.main.active {
+    background-color: var(--color-four);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigation-class {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.item-buttons {
+    font-size: var(--font-two);
+    margin: auto 0;
+    padding: 0.7em 1.5em;
+    min-width: 150px;
+    color: var(--color-one);
+    background: none;
+    line-height: 1.5em;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.item-buttons.active {
+    color: var(--color-two);
+}
+
+.item-buttons:hover {
+    cursor: pointer;
+    background-color: hsla(18, 26%, 37%, 0.14);
+    color: var(--color-one);
+}
+
+.item-buttons:focus {
+    font-weight: bold;
+    background-color: hsla(18, 26%, 37%, 0.14);
+    color: var(--color-one);
+}
+
+.upgrade-button {
+    font-weight: 500;
+    margin: auto 0;
+    font-size: var(--font-two);
+    padding: 0.7em 1.5em;
+    background-image: linear-gradient(to top, var(--color-one) 50%, var(--color-two) 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    color: var(--color-three);
+    border: none;
+    border-radius: 8px;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.upgrade-button:hover {
+    cursor: pointer;
+    color: var(--color-four);
+    background-position: bottom;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}

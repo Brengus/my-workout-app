@@ -1,0 +1,10 @@
+.main-cardset {
+    position: relative;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    gap: 2em;
+    border-bottom: 1px solid var(--color-two);
+    padding-bottom: 50px;
+}

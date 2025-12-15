@@ -1,0 +1,126 @@
+.book-icon {
+    padding: 0.5em 1em;
+    background-color: var(--color-popup);
+    color: var(--color-one);
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    position: sticky;
+    left: 95%;
+    z-index: 2;
+    bottom: 20px;
+    animation: shadow 2s infinite;
+    font-weight: bold;
+}
+
+.book-icon:hover {
+    cursor: pointer;
+}
+
+.book-icon.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+}
+
+.popup-x {
+    margin: 10px 30px 0 0;
+    cursor: pointer;
+}
+
+.popup-details {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+
+.space-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 60px;
+    /* height: 100px; */
+}
+
+.booking-space {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 99999;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: var(--color-popup-hover);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+
+    transform-origin: calc(100% - 50px) calc(100% - 50px);
+    border-radius: 200px;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.booking-space.active {
+    transform: scale(1);
+    border-radius: 0;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.left-stick {
+    position: absolute;
+    top: 10px;
+    width: 5px;
+    height: 20px;
+    border-radius: 100px;
+    background: white;
+    transform: skewX(45deg);
+}
+
+.right-stick {
+    position: absolute;
+    top: 10px;
+    width: 5px;
+    height: 20px;
+    border-radius: 100px;
+    background: white;
+    transform: skewX(-45deg);
+}
+
+.react-datepicker {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+@keyframes popshow {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 5px var(--color-popup);
+    }
+
+    50% {
+        box-shadow: 0 0 40px var(--color-popup-hover);
+    }
+
+    100% {
+        box-shadow: 0 0 5px var(--color-popup);
+    }
+}

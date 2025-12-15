@@ -1,0 +1,11 @@
+.logos-slide {
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.logos-slide img {
+    height: 100px;
+    vertical-align: middle;
+    padding: 0 20px;
+}
