@@ -1,4 +1,4 @@
-import MainPage from './index';
+import MainPage from './index.tsx';
 import Popup from './components/Popup';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
