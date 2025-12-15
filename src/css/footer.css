@@ -39,3 +39,15 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media (max-width: 768px) {
+    .main-footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        padding: 0 20px;
+    }
+
+    .footer-icons-list {
+        width: 100%;
+    }
+}

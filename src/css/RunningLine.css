@@ -40,3 +40,9 @@
     position: relative;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    .white-background {
+        width: 100%;
+    }
+}

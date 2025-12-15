@@ -124,3 +124,15 @@
         box-shadow: 0 0 5px var(--color-popup);
     }
 }
+
+@media (max-width: 768px) {
+    .booking-space {
+        width: 100%;
+    }
+
+    .book-icon {
+        position: fixed;
+        left: 75vw;
+        
+    }
+}

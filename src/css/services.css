@@ -76,3 +76,10 @@
         transform: skewY(0deg) scale(1);
     }
 }
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
