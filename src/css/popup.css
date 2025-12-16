@@ -25,7 +25,9 @@
 }
 
 .popup-x {
-    margin: 10px 30px 0 0;
+    margin: 20px 10px 0 0;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -76,8 +78,8 @@
 }
 
 .left-stick {
-    position: absolute;
-    top: 10px;
+    position: relative;
+    /* top: 10px; */
     width: 5px;
     height: 20px;
     border-radius: 100px;
@@ -86,13 +88,13 @@
 }
 
 .right-stick {
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: -20px;
     width: 5px;
     height: 20px;
     border-radius: 100px;
     background: white;
-    transform: rotate(-45deg);
+    transform: rotate(135deg);
 }
 
 .react-datepicker {
@@ -128,8 +130,10 @@
 
 @media (max-width: 768px) {
     .popup-x {
-        padding-top: env(safe-area-inset-top);
-        padding-bottom: env(safe-area-inset-bottom);
+        margin-top: env(safe-area-inset-top);
+        margin-top: 10px;
+        margin-right: 0px;
+        /* padding-bottom: env(safe-area-inset-bottom); */
     }
 
     .booking-space {
