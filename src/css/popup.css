@@ -128,12 +128,15 @@
 
 @media (max-width: 768px) {
     .popup-x {
-        padding-top: env(safe-area-inset-bottom);
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
     }
 
     .booking-space {
         width: 100%;
         padding-top: env(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+
     }
 
     .book-icon {
