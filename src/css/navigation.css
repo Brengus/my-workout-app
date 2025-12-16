@@ -10,11 +10,15 @@
     position: sticky;
     z-index: 10000;
     display: none;
-    top: 10px;
-    left: 95%;
+    /* top: 10px; */
+    left: calc(100% - 45px);
     width: 35px;
     height: 35px;
     flex-direction: column;
+}
+
+.first-stick {
+    margin-top: 0;
 }
 
 .first-stick,
@@ -102,23 +106,28 @@
 }
 
 .logo {
-    width: 100px;
-    height: auto;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
+    margin: 10px 0 10px 10px;
 }
 
 @media (max-width: 768px) {
     .main {
-        height: 60px;
+        height: auto;
     }
 
     .menu-icon {
         display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .navigation-class {
-        position: relative;
-        top: -40px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
     }
 
     .upgrade-button {

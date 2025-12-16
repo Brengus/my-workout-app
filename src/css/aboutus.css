@@ -7,7 +7,6 @@
 .aboutus-submain {
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .aboutus-header {
@@ -60,4 +59,10 @@
     line-height: 1.6em;
     color: var(--color-three);
     padding-bottom: 4em;
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        margin: 0 20px;
+    }
 }

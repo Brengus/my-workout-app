@@ -129,7 +129,7 @@
 @media (max-width: 768px) {
     .booking-space {
         width: 100%;
-        padding-bottom: env(safe-area-inset-bottom);
+        padding-top: env(safe-area-inset-bottom);
     }
 
     .book-icon {

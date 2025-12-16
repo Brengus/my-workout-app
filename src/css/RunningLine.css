@@ -3,6 +3,15 @@
     overflow: hidden;
 }
 
+.running-line-title {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5em;
+    margin-bottom: 4rem;
+    color: var(--color-one);
+    font-weight: 500;
+}
+
 .logos {
     display: flex;
     width: 100%;
@@ -36,7 +45,7 @@
 
 .white-background {
     width: 1200px;
-    margin: 0 auto;
+    margin: 3rem auto;
     position: relative;
     height: auto;
 }

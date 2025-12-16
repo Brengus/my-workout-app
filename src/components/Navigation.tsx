@@ -58,7 +58,7 @@ function Navigation() {
                 </div>
                 <nav className="navigation-class">
                     <div className="item">
-                        <img src="../logo.svg" alt="logo image" className="logo" onClick={() => handleClick("home")} />
+                        <img src="../servicesimg/dog.png" alt="logo image" className="logo" onClick={() => handleClick("home")} />
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""}`}>
                         <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("home")}>HOME</button>

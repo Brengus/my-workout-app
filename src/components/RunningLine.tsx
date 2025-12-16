@@ -7,6 +7,7 @@ export default function RunningLine() {
             <div className="column">
                 <div className="clients">
                     <div className="main-container">
+                        <h3 className="running-line-title">Our Partners</h3>
                         <div className="logos">
                             <LogoSlide className="slide-animation" />
                             <LogoSlide className="slide-animation" />

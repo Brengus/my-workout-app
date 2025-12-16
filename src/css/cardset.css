@@ -12,7 +12,7 @@
 @media (max-width: 768px) {
     .main-cardset {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0px 20px 60px 20px;
         margin: 20px auto;
     }
 }
