@@ -51,7 +51,7 @@ function Navigation() {
             <div className="ghost" ref={ghostRef}></div>
 
             <div className={`main ${isScrolled ? "active" : ""}`} ref={scrollRef}>
-                <div className="menu-icon" onClick={() => handleMenuClick()}>
+                <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={() => handleMenuClick()}>
                     <div className="first-stick"></div>
                     <div className="second-stick"></div>
                     <div className="third-stick"></div>

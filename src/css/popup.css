@@ -82,7 +82,7 @@
     height: 20px;
     border-radius: 100px;
     background: white;
-    transform: skewX(45deg);
+    transform: rotate(45deg);
 }
 
 .right-stick {
@@ -92,7 +92,7 @@
     height: 20px;
     border-radius: 100px;
     background: white;
-    transform: skewX(-45deg);
+    transform: rotate(-45deg);
 }
 
 .react-datepicker {
@@ -127,6 +127,10 @@
 }
 
 @media (max-width: 768px) {
+    .popup-x {
+        padding-top: env(safe-area-inset-bottom);
+    }
+
     .booking-space {
         width: 100%;
         padding-top: env(safe-area-inset-bottom);
