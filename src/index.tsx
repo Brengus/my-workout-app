@@ -5,6 +5,7 @@ import CardSet from './components/CardSet';
 import MainHero from './components/MainHero';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
+import OpeningHours from './components/OpeningHours';
 
 function MainPage() {
     return (
@@ -14,6 +15,7 @@ function MainPage() {
             <AboutUs />
             <RunningLine />
             <Services />
+            <OpeningHours />
             <CardSet />
         </>
     )

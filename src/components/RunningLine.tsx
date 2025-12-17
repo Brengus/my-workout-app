@@ -3,7 +3,7 @@ import "../css/RunningLine.css"
 
 export default function RunningLine() {
     return (
-        <div className="white-background">
+        <div id="our-partners" className="white-background">
             <div className="column">
                 <div className="clients">
                     <div className="main-container">

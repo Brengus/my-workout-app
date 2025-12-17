@@ -63,9 +63,9 @@ function Navigation() {
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""}`}>
                         <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("home")}>HOME</button>
                         <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("aboutus")}>ABOUT US</button>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("testimonials")}>TESTIMONIALS</button>
+                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("our-partners")}>OUR PARTNERS</button>
                         <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("services")}>SERVICES</button>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("openinghours")}>OPENING HOURS</button>
+                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("opening-hours")}>OPENING HOURS</button>
 
                     </div>
                     <button className="item upgrade-button">Book a Visit</button>
