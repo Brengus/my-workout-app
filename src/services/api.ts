@@ -1,5 +1,5 @@
 // Adjust this URL to wherever your backend is running (e.g., http://localhost:8080)
-const API_URL = "http://localhost:5000";
+const API_URL = "https://admingroomo.vercel.app";
 
 export interface Ticket {
     _id: string;
