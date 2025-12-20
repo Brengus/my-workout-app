@@ -26,8 +26,9 @@
 
 .popup-x {
     margin: 20px 10px 0 0;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    position: relative;
     cursor: pointer;
 }
 
@@ -36,7 +37,8 @@
     padding-top: 10px;
     justify-content: space-around;
     color: aliceblue;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 
@@ -77,24 +79,23 @@
     pointer-events: all;
 }
 
-.left-stick {
-    position: relative;
-    /* top: 10px; */
-    width: 5px;
-    height: 20px;
-    border-radius: 100px;
+.left-stick,
+.right-stick {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 25px;
     background: white;
-    transform: rotate(45deg);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.left-stick {
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .right-stick {
-    position: relative;
-    top: -20px;
-    width: 5px;
-    height: 20px;
-    border-radius: 100px;
-    background: white;
-    transform: rotate(135deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .react-datepicker {
