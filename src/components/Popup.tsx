@@ -3,6 +3,7 @@ import "../css/popup.css";
 import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeStatus } from '../slices/popupSlice';
+import BusLayout from "./BusLayout";
 import Picker from "./DatePicker"
 
 interface State {
@@ -49,7 +50,8 @@ function Popup() {
                         <div className="right-stick"></div>
                     </div>
                 </div>
-                <Picker />
+                {/* <Picker /> */}
+                <BusLayout />
             </div>
             <button
                 className={`book-icon ${isOpen ? 'hidden' : ''}`}
