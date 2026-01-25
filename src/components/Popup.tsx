@@ -1,11 +1,10 @@
 import "../css/popup.css";
 // import "./Pizza"
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeStatus } from '../slices/popupSlice';
 import { changeDarkMode } from "../slices/darkmodeSlice";
 import BusLayout from "./BusLayout";
-import Picker from "./DatePicker"
 
 interface State {
     popup: {
@@ -43,7 +42,7 @@ function Popup() {
             document.removeEventListener("mousedown", handleClickOutside);
             document.body.style.overflow = 'unset';
         }
-    }, [isOpen]);
+    }, [isOpen, handleClickOutside]);
 
     return (
         <>

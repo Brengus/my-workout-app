@@ -7,11 +7,11 @@ interface Name {
 const LogoSlide: React.FC<Name> = ({ className }) => {
     return (
         <div className={`logos-slide ${className}`}>
-            <img src="../runningimg/advance.png" alt="america picture" />
-            <img src="../runningimg/carnilove.png" alt="america picture" />
-            <img src="../runningimg/monge-logo.jpg" alt="america picture" />
-            <img src="../runningimg/purina.svg" alt="america picture" />
-            <img src="../runningimg/happydog.webp" alt="america picture" />
+            <img src="../runningimg/advance.png" alt="america" />
+            <img src="../runningimg/carnilove.png" alt="america" />
+            <img src="../runningimg/monge-logo.jpg" alt="america" />
+            <img src="../runningimg/purina.svg" alt="america" />
+            <img src="../runningimg/happydog.webp" alt="america" />
         </div>
     )
 }
