@@ -43,7 +43,7 @@ function Popup() {
             document.removeEventListener("mousedown", handleClickOutside);
             document.body.style.overflow = 'unset';
         }
-    }, [isOpen]);
+    }, [isOpen, closePopUp]);
 
     return (
         <>
