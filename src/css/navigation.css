@@ -24,7 +24,8 @@
 .first-stick,
 .second-stick,
 .third-stick {
-    background-color: white;
+    background-color: var(--color-two);
+    /* Dark Green - Visible against Cream bg */
     min-width: 30px;
     min-height: 3px;
     margin: 5px 0;
@@ -38,8 +39,10 @@
 }
 
 .main.active {
-    background-color: var(--color-four);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-one);
+    /* Cream - Clean sticky background */
+    box-shadow: 0 2px 4px rgba(36, 61, 29, 0.1);
+    /* Subtle Dark Green shadow */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -56,27 +59,31 @@
     margin: auto 0;
     padding: 0.7em 1.5em;
     min-width: 150px;
-    color: var(--color-one);
+    font-weight: 700;
+    color: var(--color-two);
     background: none;
     line-height: 1.5em;
     border: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.item-buttons.active {
-    color: var(--color-two);
-}
+/* .item-buttons.active {
+    color: var(--color-popup);
+     Terracotta - Active state 
+} */
 
 .item-buttons:hover {
     cursor: pointer;
-    background-color: hsla(18, 26%, 37%, 0.14);
-    color: var(--color-one);
+    background-color: rgba(141, 178, 162, 0.2);
+    /* Sage with low opacity */
+    color: var(--color-popup);
+    /* Terracotta on hover */
 }
 
 .item-buttons:focus {
     font-weight: bold;
-    background-color: hsla(18, 26%, 37%, 0.14);
-    color: var(--color-one);
+    background-color: rgba(141, 178, 162, 0.2);
+    color: var(--color-popup);
 }
 
 .upgrade-button {
@@ -84,10 +91,12 @@
     margin: auto 0;
     font-size: var(--font-two);
     padding: 0.7em 1.5em;
-    background-image: linear-gradient(to top, var(--color-one) 50%, var(--color-two) 50%);
+    /* Gradient: Dark Green -> Terracotta */
+    background-image: linear-gradient(to top, var(--color-two) 50%, var(--color-popup) 50%);
     background-size: 100% 200%;
     background-position: top;
-    color: var(--color-three);
+    color: var(--color-one);
+    /* Cream text */
     border: none;
     border-radius: 8px;
     transition: background-position 0.5s ease-in-out;
@@ -95,7 +104,8 @@
 
 .upgrade-button:hover {
     cursor: pointer;
-    color: var(--color-four);
+    color: var(--color-one);
+    /* Keep text Cream */
     background-position: bottom;
 }
 
@@ -157,10 +167,11 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: var(--color-four);
+        background-color: var(--color-one);
+        /* Cream background for mobile menu */
         padding-top: 10px;
         border: none;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(36, 61, 29, 0.1);
         z-index: 998;
     }
 }

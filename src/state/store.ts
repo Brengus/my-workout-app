@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import popupReducer from "../slices/popupSlice"
+import darkmodeReducer from "../slices/darkmodeSlice"
 
 export const store = configureStore({
     reducer: {
-        popup: popupReducer
+        popup: popupReducer,
+        darkmode: darkmodeReducer
     }
 })
 

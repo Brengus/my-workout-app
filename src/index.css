@@ -1,22 +1,22 @@
 :root {
   font-size: 14px;
-  --background-color: var(--color-four);
+  --background-color: var(--color-one);
 
-  --color-one: hsl(30, 5%, 95%);
-  --color-two: hsl(30, 5%, 70%);
-  --color-three: hsl(30, 5%, 30%);
-  --color-four: hsl(30, 5%, 10%);
+  --color-four: #B4B56D;
+  --color-three: #8DB2A2;
 
-  --color-popup: #ff8c00;
+  --color-one: #f5f3ef;
+  --color-popup: #E4704B;
 
-  --color-popup-hover: hsl(45, 100%, 50%);
+  --color-two: #00654b;
+  --text-color-two: hsl(107, 36%, 30%);
+  --text-color-three: hsl(107, 36%, 60%);
+
+
+
+  --color-popup-hover: hsl(15, 75%, 80%);
+
 }
-
-/* @media (max-width: 768px) {
-  :root {
-    font-size: 12px;
-  }
-} */
 
 html {
   scroll-behavior: smooth;

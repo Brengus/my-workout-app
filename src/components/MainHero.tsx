@@ -3,7 +3,12 @@ function MainHero() {
     return (
         <>
             <div id="home" className="main-hero">
-                <img src="../cat.jpg" alt="" className="hero-image" />
+                <div className="main-hero-grid">
+                    <div className="main-hero-text">GROOMING THAT MAKES YOUR DOG GO BLIAD</div>
+                    <img src="../doggo.jpeg" alt="" className="hero-image" />
+
+
+                </div>
             </div>
         </>
     )

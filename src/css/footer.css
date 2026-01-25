@@ -4,13 +4,17 @@
     max-width: 1200px;
     gap: 3em;
     margin: 0 auto;
-    color: var(--color-two);
+    /* Added Background and Padding to create the "Luxury Anchor" look */
+    background-color: var(--color-two); /* Dark Green */
+    padding: 50px; 
+    border-radius: 20px 20px 0 0; /* Optional: Rounds the top corners for an organic feel */
+    color: var(--color-three); /* Sage - Soft text for general info */
 }
 
 .title-footer {
     line-height: 3em;
     font-weight: 500;
-    color: var(--color-one);
+    color: var(--color-popup); /* Terracotta - Stands out clearly */
     font-size: 1.25em;
 }
 
@@ -20,13 +24,15 @@
 
 .link-footer {
     text-decoration: none;
-    color: var(--color-one);
+    color: var(--color-one); /* Cream - High contrast for links */
 }
 
 .footer-icon {
     width: 30px;
     border-radius: 100px;
-    transition: transform 0.2s ease-in-out
+    transition: transform 0.2s ease-in-out;
+    /* No background color needed for image, but if it was an SVG container: */
+    /* background-color: var(--color-one); */
 }
 
 .footer-icon:hover {
@@ -44,12 +50,11 @@
     .main-footer {
         grid-template-columns: 1fr;
         gap: 2em;
-        padding: 0 20px;
+        padding: 40px 20px; /* Adjusted padding for mobile */
     }
 
     .footer-icons-list {
         width: 100%;
         margin-bottom: 80px;
     }
-
 }

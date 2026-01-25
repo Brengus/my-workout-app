@@ -1,6 +1,6 @@
 .aboutus-main {
     width: 100%;
-    background-color: var(--color-one);
+    background-color: var(--color-one); /* Cream Background */
     scroll-margin-top: 100px;
 }
 
@@ -12,7 +12,7 @@
 .aboutus-header {
     text-align: center;
     font-weight: 500;
-    color: var(--color-four);
+    color: var(--color-two); /* Dark Green - Strongest hierarchy */
     margin: 0 auto;
     padding-top: 4rem;
     line-height: 1.8em;
@@ -21,14 +21,14 @@
 .headline {
     font-size: 0.875rem;
     line-height: 1.5em;
-    color: var(--color-three);
+    color: var(--color-popup); /* Terracotta Orange - Pops as an accent */
     text-align: center;
 }
 
 .subheadline {
     font-size: 1.25rem;
     line-height: 1.5em;
-    color: var(--color-four);
+    color: var(--color-four); /* Olive - Secondary hierarchy */
     text-align: center;
     margin-bottom: 2em;
 }
@@ -42,14 +42,14 @@
 
 .separator {
     margin: 0 20px;
-    border-bottom: 1px solid var(--color-two);
+    border-bottom: 1px solid var(--color-three); /* Sage - Softer line than dark green */
 }
 
 .about-titles {
     border-radius: 10px;
     padding: 0.5em 2em;
-    background-color: var(--color-two);
-    color: var(--color-one);
+    background-color: var(--color-three); /* Sage Background */
+    color: var(--color-two); /* Dark Green Text - Good contrast on Sage */
     font-weight: 500;
 }
 
@@ -58,7 +58,7 @@
     margin: 0 auto;
     text-align: center;
     line-height: 1.6em;
-    color: var(--color-three);
+    color: var(--color-two); /* Dark Green - Essential for readability on Cream */
     padding-bottom: 4em;
 }
 

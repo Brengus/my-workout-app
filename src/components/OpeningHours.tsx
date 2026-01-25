@@ -19,7 +19,7 @@ function OpeningHours() {
                 <div className="opening-card-parent">
                     {objArr.map((item, index) => {
                         return (
-                            <div className="opening-child">
+                            <div className="opening-child" key={index} >
                                 <h3>{item.day}</h3>
                                 <p>{item.hours}</p>
                             </div>

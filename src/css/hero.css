@@ -14,30 +14,35 @@
 .hero-text {
     border-radius: 8px;
     background-color: var(--color-popup);
+    /* Terracotta */
     box-shadow: var(--color-four) 0px 3px 3px 0px;
+    /* Olive Shadow */
 }
 
 .box-1 {
-    background-image: url('/public/cat.jpg');
+    background-image: url('/public/Studio.jpeg');
     background-size: cover;
     background-position: center;
 }
 
 .box-4 {
-    background: var(--color-popup-hover);
+    background: var(--color-two);
     font-size: 3.4rem;
-    color: #EFF6FF;
+    font-weight: 700;
+    color: #F3CCE8;
     text-align: center;
     align-content: center;
 }
 
 .box-2 {
-    background: var(--color-popup);
+    background-image: url("/public/dzagloba.jpeg");
+    background-size: cover;
+    /* Terracotta */
     font-size: 25px;
     padding: 1em;
-    color: var(--color-one);
+    color: #F3CCE8;
+    /* Cream text */
     text-align: center;
-
 }
 
 .hero-title {
@@ -48,22 +53,30 @@
 
 .hero-desc {
     font-size: 1.5rem;
-    color: var(--color-one);
+    color: #F3CCE8;
+    /* Cream text */
     font-weight: normal;
 }
 
 .box-3 {
-    background-image: url('/public/hero.jpg');
+    background: #F3CCE8;
     background-size: cover;
+    font-size: 3.4rem;
+    color: #FF6C24;
+    font-weight: 700;
     background-position: center;
+    text-align: center;
+    align-content: center;
 }
 
 .book-now {
     padding: 0.7em 1.5em;
-    background-image: linear-gradient(to top, #2f73f2 50%, #1c54c8 50%);
+    /* Changed Blue gradient to Sage -> Dark Green */
+    background-image: linear-gradient(to top, var(--color-two) 50%, var(--color-three) 50%);
     background-size: 100% 200%;
     background-position: top;
-    color: white;
+    color: var(--color-one);
+    /* Cream text */
     border: none;
     border-radius: 8px;
     transition: background-position 0.5s ease-in-out;

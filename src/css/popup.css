@@ -1,7 +1,9 @@
 .book-icon {
     padding: 0.5em 1em;
     background-color: var(--color-popup);
+    /* Terracotta */
     color: var(--color-one);
+    /* Cream text */
     border: none;
     width: 80px;
     height: 80px;
@@ -36,12 +38,11 @@
     display: flex;
     padding-top: 10px;
     justify-content: space-around;
-    color: aliceblue;
+    color: var(--color-one);
+    /* Cream - Readable on Dark Green */
     font-weight: 500;
     font-size: 1.2rem;
 }
-
-
 
 .space-top {
     display: grid;
@@ -60,9 +61,9 @@
     width: 30%;
     height: 100vh;
     height: 100dvh;
-    background-color: var(--color-popup-hover);
+    /* Changed to Dark Green for a premium "Drawer" look */
+    background-color: var(--color-two);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-
 
     transform-origin: calc(100% - 50px) calc(100% - 50px);
     border-radius: 200px;
@@ -85,7 +86,8 @@
     left: 50%;
     width: 4px;
     height: 25px;
-    background: white;
+    background: var(--color-popup);
+    /* Terracotta - Pop color for Close X */
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -121,7 +123,8 @@
     }
 
     50% {
-        box-shadow: 0 0 40px var(--color-popup-hover);
+        /* Glow effect using Olive/Sage tone or lighter Terracotta */
+        box-shadow: 0 0 40px var(--color-four);
     }
 
     100% {
@@ -141,12 +144,10 @@
         width: 100%;
         padding-top: env(safe-area-inset-bottom);
         padding-bottom: env(safe-area-inset-top);
-
     }
 
     .book-icon {
         position: fixed;
         left: 75vw;
-
     }
 }

@@ -5,7 +5,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: 50px auto;
     gap: 2em;
-    border-bottom: 1px solid var(--color-two);
+    /* Changed to Sage for a softer section break */
+    border-bottom: 1px solid var(--color-three);
     padding-bottom: 50px;
 }
 

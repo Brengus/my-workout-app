@@ -3,12 +3,16 @@ import "../css/popup.css";
 import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeStatus } from '../slices/popupSlice';
+import { changeDarkMode } from "../slices/darkmodeSlice";
 import BusLayout from "./BusLayout";
 import Picker from "./DatePicker"
 
 interface State {
     popup: {
         isOpen: boolean
+    },
+    darkmode: {
+        isDarkmode: boolean
     }
 }
 
@@ -16,9 +20,10 @@ function Popup() {
 
     const popupRef = useRef<HTMLDivElement>(null);
     const isOpen: boolean = useSelector((state: State) => state.popup.isOpen);
+    const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
     const dispatch = useDispatch();
     const closePopUp = () => dispatch(changeStatus());
-
+    const switchMode = () => dispatch(changeDarkMode());
     const handleClickOutside = (event: MouseEvent) => {
         if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
             closePopUp();
@@ -45,6 +50,7 @@ function Popup() {
             <div className={`booking-space ${isOpen ? 'active' : ''}`} ref={popupRef}>
                 <div className="space-top">
                     <div className="popup-details">Select Details</div>
+                    <div onClick={switchMode} >{isDarkmode ? "dark" : "light"}</div>
                     <div onClick={closePopUp} className="popup-x">
                         <div className="left-stick"></div>
                         <div className="right-stick"></div>

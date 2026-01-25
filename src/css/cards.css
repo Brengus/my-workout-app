@@ -7,14 +7,14 @@
 }
 
 .data {
-    color: var(--color-one);
+    color: var(--color-popup); /* Terracotta - Makes the big number/title pop */
     font-weight: 500;
     font-size: 2em;
     line-height: 1.8em;
 }
 
 .text {
-    color: var(--color-two);
+    color: var(--color-two); /* Dark Green - Readable body text */
     font-size: var(--font-three);
     width: 250px;
     font-weight: 400;
