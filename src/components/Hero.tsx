@@ -1,7 +1,7 @@
 import "../css/hero.css";
 
-import { useSelector, useDispatch } from "react-redux";
-import { changeDarkMode } from "../slices/darkmodeSlice";
+import { useSelector } from "react-redux";
+// import { changeDarkMode } from "../slices/darkmodeSlice";
 
 interface State {
     darkmode: {
