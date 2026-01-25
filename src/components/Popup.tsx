@@ -1,6 +1,6 @@
 import "../css/popup.css";
 // import "./Pizza"
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeStatus } from '../slices/popupSlice';
 import { changeDarkMode } from "../slices/darkmodeSlice";
@@ -21,8 +21,8 @@ function Popup() {
     const isOpen: boolean = useSelector((state: State) => state.popup.isOpen);
     const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
     const dispatch = useDispatch();
-    const closePopUp = () => dispatch(changeStatus());
-    const switchMode = () => dispatch(changeDarkMode());
+    const closePopUp = useCallback(() => dispatch(changeStatus()), [dispatch]);
+    const switchMode = useCallback(() => dispatch(changeDarkMode()), [dispatch]);
 
 
 

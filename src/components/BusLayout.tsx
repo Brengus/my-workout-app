@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Ticket, getTickets, bookSeat } from "../services/api";
+import { getTickets, bookSeat } from "../services/api";
 import "../css/bus.css";
 
 // Interface for the slot selected by the user
