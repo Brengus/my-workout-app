@@ -23,14 +23,15 @@ function Popup() {
     const dispatch = useDispatch();
     const closePopUp = () => dispatch(changeStatus());
     const switchMode = () => dispatch(changeDarkMode());
-    const handleClickOutside = (event: MouseEvent) => {
-        if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
-            closePopUp();
-        }
-    }
+
 
 
     useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
+                closePopUp();
+            }
+        }
         if (isOpen) {
             document.addEventListener("mousedown", handleClickOutside);
             document.body.style.overflow = 'hidden';
@@ -42,7 +43,7 @@ function Popup() {
             document.removeEventListener("mousedown", handleClickOutside);
             document.body.style.overflow = 'unset';
         }
-    }, [isOpen, handleClickOutside]);
+    }, [isOpen]);
 
     return (
         <>
