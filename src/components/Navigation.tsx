@@ -77,7 +77,7 @@ function Navigation() {
                         <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("opening-hours")}>OPENING HOURS</button>
 
                     </div>
-                    <img className="item upgrade-button" src={isDarkmode ? "../blackPoodle.png" : "../whitePoodle.png"} onClick={() => switchMode()} />
+                    <img className="item upgrade-button" src={isDarkmode ? "../blackPoodle.png" : "../whitePoodle.png"} alt="darkmode whitemode" onClick={() => switchMode()} />
                 </nav>
             </div>
         </>
