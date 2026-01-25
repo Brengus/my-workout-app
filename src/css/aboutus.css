@@ -1,69 +1,109 @@
 .aboutus-main {
     width: 100%;
-    background-color: var(--color-one); /* Cream Background */
+    background-color: var(--color-one);
     scroll-margin-top: 100px;
+    /* padding: 80px 20px; */
+    /* More breathing room */
 }
 
 .aboutus-submain {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+/* Header Section */
+.aboutus-header-group {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .aboutus-header {
-    text-align: center;
-    font-weight: 500;
-    color: var(--color-two); /* Dark Green - Strongest hierarchy */
-    margin: 0 auto;
-    padding-top: 4rem;
-    line-height: 1.8em;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    /* Fluid typography */
+    font-weight: 700;
+    color: var(--color-two);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
 }
 
 .headline {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    color: var(--color-popup); /* Terracotta Orange - Pops as an accent */
-    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-popup);
+    margin-bottom: 15px;
 }
 
 .subheadline {
     font-size: 1.25rem;
-    line-height: 1.5em;
-    color: var(--color-four); /* Olive - Secondary hierarchy */
-    text-align: center;
-    margin-bottom: 2em;
+    color: var(--color-four);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
 }
 
-.title-separator {
+/* Content Grid */
+.about-content-grid {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.3);
+    /* Subtle glass effect on your cream */
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--color-three);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Modernized Separator Style */
+.title-separator {
+    display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .separator {
-    margin: 0 20px;
-    border-bottom: 1px solid var(--color-three); /* Sage - Softer line than dark green */
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-three);
 }
 
 .about-titles {
-    border-radius: 10px;
-    padding: 0.5em 2em;
-    background-color: var(--color-three); /* Sage Background */
-    color: var(--color-two); /* Dark Green Text - Good contrast on Sage */
-    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    color: var(--color-two);
+    background-color: var(--color-three);
+    padding: 6px 16px;
+    border-radius: 50px;
+    /* Pill shape is more modern */
 }
 
 .about-text {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.6em;
-    color: var(--color-two); /* Dark Green - Essential for readability on Cream */
-    padding-bottom: 4em;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-two);
 }
 
-@media (max-width: 768px) {
-    .about-text {
-        margin: 0 20px;
+/* Responsive */
+@media (max-width: 900px) {
+    .about-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutus-main {
+        width: 90%;
+        padding: 50px 20px;
     }
 }

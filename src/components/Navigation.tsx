@@ -1,11 +1,22 @@
 import "../css/navigation.css";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { changeDarkMode } from "../slices/darkmodeSlice";
+
+interface State {
+    darkmode: {
+        isDarkmode: boolean;
+    }
+}
 
 
 
 function Navigation() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const ghostRef = useRef<HTMLDivElement>(null);
+    const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
+    const dispatch = useDispatch();
+    const switchMode = useCallback(() => dispatch(changeDarkMode()), [dispatch]);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -66,7 +77,7 @@ function Navigation() {
                         <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("opening-hours")}>OPENING HOURS</button>
 
                     </div>
-                    <button className="item upgrade-button">Book a Visit</button>
+                    <img className="item upgrade-button" src={isDarkmode ? "../blackPoodle.png" : "../whitePoodle.png"} onClick={() => switchMode()} />
                 </nav>
             </div>
         </>

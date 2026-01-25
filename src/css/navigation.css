@@ -87,26 +87,15 @@
 }
 
 .upgrade-button {
-    font-weight: 500;
     margin: auto 0;
-    font-size: var(--font-two);
-    padding: 0.7em 1.5em;
-    /* Gradient: Dark Green -> Terracotta */
-    background-image: linear-gradient(to top, var(--color-two) 50%, var(--color-popup) 50%);
-    background-size: 100% 200%;
-    background-position: top;
     color: var(--color-one);
-    /* Cream text */
     border: none;
-    border-radius: 8px;
+    border-radius: 100px;
     transition: background-position 0.5s ease-in-out;
 }
 
 .upgrade-button:hover {
     cursor: pointer;
-    color: var(--color-one);
-    /* Keep text Cream */
-    background-position: bottom;
 }
 
 .nav-buttons {

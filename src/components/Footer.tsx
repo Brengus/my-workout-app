@@ -14,8 +14,8 @@ function Footer() {
             </div>
             <div className="card-footer">
                 <div className="title-footer">Email</div>
-                <div><span>Office : </span><a href="mailto:sao@example.com" className="link-footer">info@groomo.com</a></div>
-                <div><span>Site : </span><a href="mailto:sao@example.com" className="link-footer">admin@groomo.com</a></div>
+                <div><span>Office : </span><a href="mailto:sao@example.com" className="link-footer">info@mollys.com</a></div>
+                <div><span>Site : </span><a href="mailto:sao@example.com" className="link-footer">admin@mollys.com</a></div>
             </div>
             <div className="card-footer">
                 <div className="title-footer">Social</div>
