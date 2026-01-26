@@ -10,10 +10,14 @@
     text-align: center;
     color: var(--color-two);
     /* Dark Green - Visible against Cream body */
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
     padding: 30px 0;
     scroll-margin-top: 100px;
+}
+
+.service-title-dark {
+    color: var(--color-one);
 }
 
 .service-card {
@@ -29,7 +33,11 @@
         "image title"
         "image description";
     /* Optional: Add a Sage shadow for depth */
-    box-shadow: 5px 5px 0px var(--color-three);
+    box-shadow: 0 2px 4px var(--color-four);
+}
+
+.service-card-dark {
+    background-color: var(--color-one);
 }
 
 .service-card img {
@@ -61,6 +69,10 @@
     margin: 0;
     padding: 0 10px;
     align-self: center;
+}
+
+.service-card-dark p {
+    color: var(--color-two);
 }
 
 @keyframes skew {

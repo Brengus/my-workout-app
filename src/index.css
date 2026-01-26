@@ -32,6 +32,10 @@ body {
   background: var(--background-color);
 }
 
+body.darkmode-body {
+  background-color: var(--color-two);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

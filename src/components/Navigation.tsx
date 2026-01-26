@@ -59,23 +59,23 @@ function Navigation() {
         <>
             <div className="ghost" ref={ghostRef}></div>
 
-            <div className={`main ${isScrolled ? "active" : ""}`} ref={scrollRef}>
+            <div className={`main ${isScrolled ? isDarkmode ? "active-dark" : "active" : ""}`} ref={scrollRef}>
                 <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={() => handleMenuClick()}>
-                    <div className="first-stick"></div>
-                    <div className="second-stick"></div>
-                    <div className="third-stick"></div>
+                    <div className={`first-stick ${isDarkmode ? "stick-color-dark" : "stick-color-light"}`}></div>
+                    <div className={`second-stick ${isDarkmode ? "stick-color-dark" : "stick-color-light"}`}></div>
+                    <div className={`third-stick ${isDarkmode ? "stick-color-dark" : "stick-color-light"}`}></div>
                 </div>
                 <nav className="navigation-class">
                     <div className="item">
                         <img src="../logo.jpeg" alt="logo" className="logo" onClick={() => handleClick("home")} />
                     </div>
-                    <div className={`nav-buttons item ${menuOpen ? "open" : ""}`}>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("home")}>HOME</button>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("aboutus")}>ABOUT US</button>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("our-partners")}>OUR PARTNERS</button>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("services")}>SERVICES</button>
-                        <button className={`item-buttons ${isScrolled ? "active" : ""}`} onClick={() => handleClick("opening-hours")}>OPENING HOURS</button>
-
+                    <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>
+                        <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick("home")}>HOME</button>
+                        <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick("aboutus")}>ABOUT US</button>
+                        <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick("our-partners")}>OUR PARTNERS</button>
+                        <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick("services")}>SERVICES</button>
+                        <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick("opening-hours")}>OPENING HOURS</button>
+                        
                     </div>
                     <img className="item upgrade-button" src={isDarkmode ? "../blackPoodle.png" : "../whitePoodle.png"} alt="darkmode whitemode" onClick={() => switchMode()} />
                 </nav>

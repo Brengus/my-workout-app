@@ -5,23 +5,31 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-one); /* Cream Background */
 }
 
 .opening-title {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--color-two); /* Dark Green - Readable Header */
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--color-two);
     line-height: 2.5rem;
+}
+
+.opening-title-dark {
+    color: var(--color-one);
 }
 
 .opening-subtitle {
     text-align: center;
     font-size: 1rem;
-    color: var(--color-four); /* Olive - Matches other subheadlines */
+    color: var(--color-four);
+    /* Olive - Matches other subheadlines */
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+}
+
+.opening-subtitle-dark {
+    color: var(--color-one);
 }
 
 .opening-card-parent {
@@ -37,19 +45,26 @@
     width: 100px;
     padding: 1em 2em;
     /* Changed border to Sage for a softer "Calendar" look */
-    border: 2px solid var(--color-three); 
+    border: 2px solid var(--color-three);
     border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.4); /* Optional: Slight transparency to pop off bg */
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Optional: Slight transparency to pop off bg */
+}
+
+.opening-child-dark {
+    background-color: var(--color-one);
 }
 
 .opening-child h3 {
     margin-bottom: 0.5em;
     font-size: 1.25rem;
-    color: var(--color-popup); /* Terracotta - Makes the Day Name pop */
+    color: var(--color-popup);
+    /* Terracotta - Makes the Day Name pop */
 }
 
 .opening-child p {
-    color: var(--color-two); /* Dark Green - High contrast for the Time */
+    color: var(--color-two);
+    /* Dark Green - High contrast for the Time */
     font-weight: 500;
 }
 

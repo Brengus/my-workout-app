@@ -1,6 +1,7 @@
 import "../css/openinghours.css";
+import { useSelector } from "react-redux";
 function OpeningHours() {
-
+    const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
     const objArr = [
         { day: 'Monday', hours: '9:00 - 17:00' },
         { day: 'Tuesday', hours: '9:00 - 17:00' },
@@ -14,12 +15,12 @@ function OpeningHours() {
     return (
         <>
             <div id="opening-hours" className="opening-main">
-                <h3 className="opening-title">Opening Hours</h3>
-                <div className="opening-subtitle">Grooming sessions are strictly by appointment only. All pre-booked appointments must follow the Salon Policy guidelines.</div>
+                <h3 className={`opening-title ${isDarkmode ? "opening-title-dark" : ""}`}>Opening Hours</h3>
+                <div className={`opening-subtitle ${isDarkmode ? "opening-subtitle-dark" : ""}`}>Grooming sessions are strictly by appointment only. All pre-booked appointments must follow the Salon Policy guidelines.</div>
                 <div className="opening-card-parent">
                     {objArr.map((item, index) => {
                         return (
-                            <div className="opening-child" key={index} >
+                            <div className={`opening-child ${isDarkmode ? "opening-child-dark" : ""}`} key={index} >
                                 <h3>{item.day}</h3>
                                 <p>{item.hours}</p>
                             </div>

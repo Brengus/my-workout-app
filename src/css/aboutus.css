@@ -1,9 +1,6 @@
 .aboutus-main {
     width: 100%;
-    background-color: var(--color-one);
     scroll-margin-top: 100px;
-    /* padding: 80px 20px; */
-    /* More breathing room */
 }
 
 .aboutus-submain {
@@ -24,6 +21,10 @@
     color: var(--color-two);
     margin-bottom: 10px;
     letter-spacing: -0.02em;
+}
+
+.aboutus-header-dark {
+    color: var(--color-one);
 }
 
 .headline {
@@ -58,6 +59,10 @@
     border-radius: 20px;
     border: 1px solid var(--color-three);
     transition: transform 0.3s ease;
+}
+
+.about-card-dark {
+    background: var(--color-one);
 }
 
 .about-card:hover {
@@ -104,6 +109,7 @@
 
     .aboutus-main {
         width: 90%;
-        padding: 50px 20px;
+        padding: 50px 0;
+        margin: 0 auto;
     }
 }

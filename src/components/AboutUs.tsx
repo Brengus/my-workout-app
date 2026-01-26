@@ -1,6 +1,8 @@
 import "../css/aboutus.css";
+import { useSelector } from "react-redux";
 
 function AboutUs() {
+    const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
     const obj = {
         header: "About Us",
         headline: "It's a Spa Day for Your Best Friend.",
@@ -17,7 +19,7 @@ function AboutUs() {
                 {/* Header Section */}
                 <div className="aboutus-header-group">
                     <div className="headline">{obj.headline}</div>
-                    <h1 className="aboutus-header">{obj.header}</h1>
+                    <h1 className={`aboutus-header ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.header}</h1>
                     <p className="subheadline">{obj.subheadline}</p>
                 </div>
 
@@ -25,7 +27,7 @@ function AboutUs() {
                 <div className="about-content-grid">
 
                     {/* Story Card */}
-                    <div className="about-card">
+                    <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
                             <div className="about-titles">{obj.ourStoryTitle}</div>
                             <div className="separator"></div>
@@ -34,7 +36,7 @@ function AboutUs() {
                     </div>
 
                     {/* Philosophy Card */}
-                    <div className="about-card">
+                    <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
                             <div className="about-titles">{obj.ourPhilosophyTitle}</div>
                             <div className="separator"></div>

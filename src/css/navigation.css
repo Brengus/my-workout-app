@@ -24,13 +24,20 @@
 .first-stick,
 .second-stick,
 .third-stick {
-    background-color: var(--color-two);
     /* Dark Green - Visible against Cream bg */
     min-width: 30px;
     min-height: 3px;
     margin: 5px 0;
     border-radius: 5px;
     transition: 0.4s;
+}
+
+.stick-color-light {
+    background-color: var(--color-two);
+}
+
+.stick-color-dark {
+    background-color: var(--color-four);
 }
 
 .ghost {
@@ -41,9 +48,13 @@
 .main.active {
     background-color: var(--color-one);
     /* Cream - Clean sticky background */
-    box-shadow: 0 2px 4px rgba(36, 61, 29, 0.1);
+    box-shadow: 0 2px 4px var(--color-four);
     /* Subtle Dark Green shadow */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main.active-dark {
+    background-color: var(--color-two);
 }
 
 .navigation-class {
@@ -60,11 +71,19 @@
     padding: 0.7em 1.5em;
     min-width: 150px;
     font-weight: 700;
-    color: var(--color-two);
+    /* color: var(--color-two); */
     background: none;
     line-height: 1.5em;
     border: none;
     transition: background-color 0.3s, color 0.3s;
+}
+
+.button-light {
+    color: var(--color-two);
+}
+
+.button-dark {
+    color: var(--color-one);
 }
 
 /* .item-buttons.active {
@@ -160,7 +179,11 @@
         /* Cream background for mobile menu */
         padding-top: 10px;
         border: none;
-        box-shadow: 0 2px 4px rgba(36, 61, 29, 0.1);
+        box-shadow: 0 2px 4px var(--color-four);
         z-index: 998;
+    }
+
+    .nav-buttons.open-dark {
+        background-color: var(--color-two);
     }
 }

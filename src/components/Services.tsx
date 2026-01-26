@@ -1,4 +1,5 @@
 import "../css/services.css";
+import { useSelector } from "react-redux";
 
 const objectArray = [
     { title: "Bathing", image: "../servicesimg/bath-tub.png", description: "Using natural shampoos to suit a variety of coats, dogs enjoy the comfort of our purpose built hydro-bath." },
@@ -12,14 +13,14 @@ const objectArray = [
 ]
 
 function Services() {
-
+    const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode)
 
     return (
         <>
-            <div id="services" className="service-title">Services</div>
+            <div id="services" className={`service-title ${isDarkmode ? "service-title-dark" : ""}`}>Services</div>
             <div className="services">
                 {objectArray.map((service, index) => (
-                    <div key={index} className="service-card">
+                    <div key={index} className={`service-card ${isDarkmode ? "service-card-dark" : ""}`}>
                         <img src={service.image} alt={service.title} style={{ gridArea: "image" }} />
                         <h3 style={{ gridArea: "title" }}>{service.title}</h3>
                         <p style={{ gridArea: "description" }}>{service.description}</p>

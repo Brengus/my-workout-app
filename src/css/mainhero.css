@@ -8,10 +8,18 @@
 
 .main-hero {
     position: relative;
-    background-color: #f5f3ef;
+    /* background-color: #f5f3ef; */
     max-width: 1200px;
     margin: 0 auto;
     top: -60px;
+}
+
+.main-hero-light {
+    background-color: #f5f3ef;
+}
+
+.main-hero-dark {
+    background-color: var(--color-two);
 }
 
 .main-hero-grid {
@@ -28,6 +36,10 @@
     margin: auto 0 0 0;
     color: var(--color-two);
     font-size: 5rem;
+}
+
+.main-hero-text-dark {
+    color: var(--color-one);
 }
 
 @media (max-width: 768px) {
